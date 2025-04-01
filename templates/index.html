@@ -18,26 +18,26 @@
                 <!-- 表單卡片外框 -->
                 <div class="card shadow-lg">
                     <div class="card-body">
-                        <h2 class="card-title text-center mb-4">AI 文字生成</h2>
+                        <h2 class="card-title text-center mb-4">今晚想來點什麼</h2>
 
                         <!-- 提交表單 -->
                         <form action="/generate" method="post">
                             <!-- 使用者輸入 prompt 的文字區塊 -->
                             <div class="mb-3">
-                                <label for="prompt" class="form-label">請輸入提示內容：</label>
+                                <label for="prompt" class="form-label">請輸入菜單：</label>
                                 <textarea 
                                     name="prompt" 
                                     id="prompt" 
                                     class="form-control" 
                                     rows="6" 
-                                    placeholder="輸入你的問題或指令..."
+                                    placeholder="輸入各種食物..."
                                 ></textarea>
                             </div>
 
                             <!-- 美化的按鈕 -->
                             <div class="d-grid">
                                 <button type="submit" class="btn btn-primary btn-lg shadow-sm">
-                                    ✨ 產生結果
+                                    確認點餐
                                 </button>
                             </div>
                         </form>
@@ -48,7 +48,7 @@
                 {% if response %}
                 <div class="card shadow mt-4">
                     <div class="card-body">
-                        <h5 class="card-title">AI 回應：</h5>
+                        <h5 class="card-title">Check：</h5>
                         <p class="card-text">{{ response }}</p>
                     </div>
                 </div>
@@ -62,4 +62,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
