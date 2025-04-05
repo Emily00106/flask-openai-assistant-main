@@ -18,13 +18,13 @@
                 <!-- 表單卡片外框 -->
                 <div class="card shadow-lg">
                     <div class="card-body">
-                        <h2 class="card-title text-center mb-4">今晚想來點什麼</h2>
+                        <h2 class="card-title text-center mb-4">今晚想做點什麼</h2>
 
                         <!-- 提交表單 -->
                         <form action="/generate" method="post">
                             <!-- 使用者輸入 prompt 的文字區塊 -->
                             <div class="mb-3">
-                                <label for="prompt" class="form-label">請輸入菜單：</label>
+                                <label for="prompt" class="form-label">查詢食譜：</label>
                                 <textarea 
                                     name="prompt" 
                                     id="prompt" 
@@ -48,7 +48,7 @@
                 {% if response %}
                 <div class="card shadow mt-4">
                     <div class="card-body">
-                        <h5 class="card-title">Check：</h5>
+                        <h5 class="card-title">做法：</h5>
                         <p class="card-text">{{ response }}</p>
                     </div>
                 </div>
